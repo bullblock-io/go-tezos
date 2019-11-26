@@ -1,4 +1,4 @@
-module github.com/bullblock-io/go-tezos/v2
+module github.com/bullblock-io/go-tezos
 
 go 1.13
 
