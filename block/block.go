@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	tzc "github.com/DefinitelyNotAGoat/go-tezos/v2/client"
+	tzc "github.com/bullblock-io/go-tezos/v2/client"
 )
 
 // BlockService is a struct wrapper for all block functions
@@ -110,25 +110,25 @@ type Operations struct {
 
 // Contents is the Contents found in a operation of a block returned by the Tezos RPC API.
 type Contents struct {
-	Kind             string            `json:"kind,omitempty"`
-	Source           string            `json:"source,omitempty"`
-	Fee              string            `json:"fee,omitempty"`
-	Counter          string            `json:"counter,omitempty"`
-	GasLimit         string            `json:"gas_limit,omitempty"`
-	StorageLimit     string            `json:"storage_limit,omitempty"`
-	Amount           string            `json:"amount,omitempty"`
-	Destination      string            `json:"destination,omitempty"`
-	Delegate         string            `json:"delegate,omitempty"`
-	Phk              string            `json:"phk,omitempty"`
-	Secret           string            `json:"secret,omitempty"`
-	Level            int               `json:"level,omitempty"`
-	ManagerPublicKey string            `json:"managerPubkey,omitempty"`
-	Balance          string            `json:"balance,omitempty"`
-	Period           int               `json:"period,omitempty"`
-	Proposal         string            `json:"proposal,omitempty"`
-	Proposals        []string          `json:"proposals,omitempty"`
-	Ballot           string            `json:"ballot,omitempty"`
-	Metadata         *ContentsMetadata `json:"metadata,omitempty"`
+	Kind             string                    `json:"kind,omitempty"`
+	Source           string                    `json:"source,omitempty"`
+	Fee              string                    `json:"fee,omitempty"`
+	Counter          string                    `json:"counter,omitempty"`
+	GasLimit         string                    `json:"gas_limit,omitempty"`
+	StorageLimit     string                    `json:"storage_limit,omitempty"`
+	Amount           string                    `json:"amount,omitempty"`
+	Destination      string                    `json:"destination,omitempty"`
+	Delegate         string                    `json:"delegate,omitempty"`
+	Phk              string                    `json:"phk,omitempty"`
+	Secret           string                    `json:"secret,omitempty"`
+	Level            int                       `json:"level,omitempty"`
+	ManagerPublicKey string                    `json:"managerPubkey,omitempty"`
+	Balance          string                    `json:"balance,omitempty"`
+	Period           int                       `json:"period,omitempty"`
+	Proposal         string                    `json:"proposal,omitempty"`
+	Proposals        []string                  `json:"proposals,omitempty"`
+	Ballot           string                    `json:"ballot,omitempty"`
+	Metadata         *ContentsMetadata         `json:"metadata,omitempty"`
 }
 
 // ContentsMetadata is the Metadata found in the Contents in a operation of a block returned by the Tezos RPC API.
